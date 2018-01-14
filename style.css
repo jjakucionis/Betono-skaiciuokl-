@@ -1,0 +1,395 @@
+table.skaiciuokle {
+  max-width: 600px;
+}
+
+#skaiciuoklesTable div.container {
+  min-width: 515px;
+}
+
+@media screen and (max-width: 564px) {
+  #skaiciuoklesTable div.container {
+    min-width: auto;
+  }
+}
+
+#skaiciuoklesTable header > h2 {
+  height: 40px;
+  line-height: 2.2em;
+  text-align: left;
+  color: #fff;
+  text-transform: none;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+#skaiciuoklesTable > div > nav {
+  margin-top: 20px;
+}
+
+#skaiciuoklesTable > div > nav li {
+  margin-left: 0px;
+}
+
+#skaiciuoklesTable > div > nav a {
+  font-size: 16px;
+  min-width: 120px;
+  border: 1px solid #c8c6c4;
+  font-weight: 600;
+  background-color: #d6d2ce; 
+}
+
+#cont > div.matoSelektoriusCont > div,
+div.contWrapper {
+  height: 40px;
+  border-radius: 5px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  #cont > div.matoSelektoriusCont > div,
+  div.contWrapper { 
+    width: 100%;
+  }
+}
+
+div.contWrapper > select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e0dfdf;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 2.8em;
+  padding-left: 7px;
+}
+
+#ven {
+  font-size: 14px;
+  line-height: 2.8em;
+  padding-left: 7px;
+}
+
+#cont div.inputWrap,
+#cont > div.matmensIvedimas {
+  display: inline-block;
+  max-width: 100px;
+  margin-right: 5%;
+}
+
+#cont div.inputWrap input,
+.extraCont > input
+ {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 2.8em;
+  padding-left: 7px;
+}
+
+#skaiciuoklesTable div#cont div.extraTotal, 
+#SkaicioutiBtn2 {
+  display: block;
+  text-align: right;
+  font-size: 23px;
+  font-weight: 500;
+  padding: 1em;
+}
+
+#SkaicioutiBtn2 span,
+span.SkaicioutiBtnCss {
+  font-size: 30px;
+}
+
+#skaiciuoklesTable > div > article > button.buttonSk {
+  bottom: 60px;
+  background-color: #3f2742;
+  cursor: pointer;
+  box-shadow: none;
+  margin-top: 0px;
+  position: relative;
+}
+
+@media screen and (max-width: 564px) {
+  #skaiciuoklesTable > div > article > button.buttonSk {
+    bottom: 19px;
+  }
+}
+
+#skaiciuoklesTable > div > article > button.button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  box-shadow: none;
+  background-color: #3f2742;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#skaiciuoklesTable > div > article > button.button:hover,
+#skaiciuoklesTable > div > article > button.buttonSk:hover {
+  background-color: #744d79;
+  color: #fff;
+}
+
+
+/* atsargos koefeciantas */
+
+div.atsKoefCont {
+  padding-left: 5%;
+  margin-bottom: 20px;
+}
+
+input.atsKoef {
+  height: 40px;
+  border-radius: 5px;
+  width: 100px;
+  margin-bottom: 5px;
+  border: 2px solid #717171;
+  font-size: 14px;
+  line-height: 2.8em;
+  padding-left: 7px;
+}
+
+div.atsKoefInfo {
+  padding-left: 5%;
+  top: -20px;
+}
+
+div.atsKoefInfo p {
+  font-size: 12px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: #717171;
+}
+
+
+
+
+#skaiciuoklesTable > div > article > hr {
+  width: 90%;
+  margin: 0 auto;
+  /* height: 0px; */
+  color: #d4d4d4;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #fbf9f9;
+}
+
+#skaiciuoklesTable > div > footer {
+  background: linear-gradient(#d6d2ce, #f9f9f9);
+  border: 1px solid #c5c2c2;
+  font-weight: 500;
+}
+
+#skaiciuoklesTable > div > footer > p.skaiciuotiBendra {
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+/* Event when mouse over the navigation bar */
+#skaiciuoklesTable li a:hover {
+    background-color: #3f2742;
+    color: white;
+}
+
+/* Form's name settings */
+#skaiciuoklesTable h3{
+  display: none;
+  clear: left;
+  text-align: center;
+}
+/* Cuboid image settings */
+#skaiciuoklesTable div.image {
+   background:url(images/kubs.png);
+   height: 100px;
+   width:auto;
+   margin: 0px 0px 20px 10px;
+   background-repeat: no-repeat;
+ /*  background-size: contain;*/
+}
+/* Cylinder image settings */
+#skaiciuoklesTable div.image2 {
+   background:url(images/cilindria.png);
+   height: 100px;
+   width:auto;
+   margin: 0px 0px 20px 10px;
+   background-repeat: no-repeat;
+  /* background-size: contain;*/
+}
+
+#skaiciuoklesTable div.image3 {
+   background:url(images/trikamps.png);
+   height: 100px;
+   width:auto;
+   margin: 0px 0px 20px 10px;
+   background-repeat: no-repeat;
+  /* background-size: contain;*/
+}
+
+/* HTML objects groaping */
+#skaiciuoklesTable div.container {
+    width: 90%;
+    margin: auto;
+}
+/* HTML objects groaping */
+#skaiciuoklesTable div.container2 {
+    width: 90%;
+    margin: auto;   
+}
+/* Settings of main background */
+
+#skaiciuoklesTable article{
+  background-color: #f0eeef    ;
+  width: 100%;
+  padding: 3em 0em;
+  padding-top: 0.1cm;
+  position: relative;
+}
+/* Visual settings of calculator head */
+#skaiciuoklesTable header{
+    color: white;
+    background-color: #ee7821;
+    clear: left;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+} 
+/* Text about calculation results for specific object */
+#skaiciuoklesTable div.extraTotal{
+  font-weight: bold;
+  padding: 1em;
+  font-size: 110%;
+}
+/* Bottom of the calculator */
+#skaiciuoklesTable footer {
+    padding: 1em;
+    color: black;
+    background-color: #adabac;
+    clear: left;
+    text-align: left;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 12px;
+    font-weight: bold;
+    font-size: 125%;
+} 
+
+/* Navigation bar position */
+#skaiciuoklesTable ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 0!important;
+}
+#skaiciuoklesTable li {
+    float: left;
+}
+/* How navigation bar looks */
+#skaiciuoklesTable li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    background-color: #d6d3ce  ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 12px;
+    border: 1px solid black;
+}
+/* Clean button settings */
+#skaiciuoklesTable .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 10px;
+    box-shadow: 0 5px #999;
+    border-radius: 12px;    
+}
+/* When Clean button is pressed */
+#skaiciuoklesTable .button:active {
+  background-color: #3e8e41;
+  box-shadow: 1px 1px 5px #666;
+  transform: translateY(2px);
+}
+/* Calculation button settings */
+#skaiciuoklesTable .buttonSk {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 10px;
+    box-shadow: 0 5px #999;
+    border-radius: 12px;  
+}
+/* How Calculate button reacts on clicking */
+#skaiciuoklesTable .buttonSk:active {
+  background-color: #3e8e41;
+  box-shadow: 1px 1px 5px #666;
+  transform: translateY(2px);
+}
+/* Calculation button settings */
+#skaiciuoklesTable .buttonSk2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 10px;
+    box-shadow: 0 5px #999;
+    border-radius: 12px;  
+}
+/* How Calculate button reacts on clicking */
+#skaiciuoklesTable .buttonSk2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* Add new forms button settings */
+#skaiciuoklesTable .buttonADD {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 0px;
+    box-shadow: none;
+    border-radius: 7px; 
+    cursor: pointer;
+}
+
+#skaiciuoklesTable .buttonADD:hover {
+  text-decoration: underline;
+}
+
+/* Name of the input fields settings */
+#skaiciuoklesTable label { 
+  display: block;
+  text-align: left;
+}
+
+/* skaiciuokles extra classes */
+
+.tabActive {
+  background-color: #3f2742 !important;
+  color: #fff !important;
+ }

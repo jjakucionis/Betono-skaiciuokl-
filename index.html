@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <table class="skaiciuokle">
+            <tbody>
+                <tr>
+                    <td id="skaiciuoklesTable" width="50%" valign="top">
+                        <div class="container">
+                            <header>
+                                <h2>Betono skaičiuoklė</h2>
+                            </header>
+                            <nav>
+                                <ul>
+                                    <li><a id="Stac" href="#">Stačiakampis</a></li>
+                                    <li><a id="Cil" class="tabActive" href="#">Cilindras</a></li>
+                                    <li><a id="Tri" href="#">Trikampis</a></li>
+                                </ul>
+                            </nav>
+                            <article>
+                                    <div class="imagesContainer">
+                                        <div id="image" class="image" hidden=""> </div>
+                                        <div id="image2" class="image2"> </div>
+                                        <div id="image3" class="image3" hidden=""> </div>
+                                    </div>
+                                <div id="cont" class="container2">
+                                    <div class="matoSelektoriusCont">
+                                        <label>Vienetas:</label>
+                                        <select id="ven" class="matoSelektorius">
+                                            <option value="Metras">Metrai</option>
+                                            <option value="Centimetras">Centimetrai</option>
+                                        </select>                   
+                                    </div>
+                                    <div class="cilMatCont">
+                                        <div class="inputWrap">
+                                            <label>Diametras:</label>
+                                            <input id="diam" class="matmensIvedimas" name="Diametras" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Auk&scaron;tis:</label>
+                                            <input id="auk" class="matmensIvedimas" name="Auk&scaron;tis" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Kolonų kiekis:</label>
+                                            <input id="kolKiekis" class="matmensIvedimas" name="Kolonos" value="" type="number" />
+                                        </div>
+                                    </div>
+                                    <!--Setting up the input fields for Cuboid-->
+                                    <div class="kubMatCont" hidden="">
+                                        <div class="inputWrap">
+                                            <label>Ilgis:</label>
+                                            <input id="ilg" class="matmensIvedimas" name="Ilgis" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Plotis:</label>
+                                            <input id="plot" class="matmensIvedimas" name="Plotis" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Auk&scaron;tis:</label>
+                                            <input id="auk2" class="matmensIvedimas" name="Auk&scaron;tis" value="" type="number" />
+                                        </div>
+                                    </div>
+                                    <!-- trikampio-->
+                                    <div class="triMatCont" hidden="">
+                                        <div class="inputWrap">
+                                            <label>Kra&scaron;tinė 1:</label>
+                                            <input id="krast1" class="matmensIvedimas" name="Krastine" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Kra&scaron;tinė 2:</label>
+                                            <input id="krast2" class="matmensIvedimas" name="Krastine" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Kra&scaron;tinė 3:</label>
+                                            <input id="krast3" class="matmensIvedimas" name="Krastine" value="" type="number" />
+                                        </div>
+                                        <div class="inputWrap">
+                                            <label>Auk&scaron;tis:</label>
+                                            <input id="auk3" class="matmensIvedimas" name="Auk&scaron;tis" value="" type="number" />
+                                        </div>
+                                    </div>
+                                    <!--Setting up the text fot results-->     
+                                    <p id="SkaicioutiBtn2">Betono tūris: <span id="SkaicioutiBtn">0.00m<sup>3</sup></span></p>
+                                </div>
+                                <!--Setting up button to calculate-->
+                                <button onclick="changeValue()" class="buttonSk">Skaičiuoti</button>
+                                <!--Setting up button for Cleaning fields-->
+                                <button onclick="DeleteAll(); resetBendra()" class="button">Perskaičiuoti</button> 
+                                <!--Atsargos koefeciento skaičiavimas -->
+                                <div class="atsKoefWrapper">
+                                    <div class="atsKoefCont">
+                                        <label>Atsargos koefecientas:</label>
+                                        <input id="atsKoef" class="atsKoef matmensIvedimas" name="Atsarga" value="" type="number" />
+                                    </div>
+                                    <div id="atsKoefInfo" class="atsKoefInfo">
+                                        <p>Kolonos – 5%</p>
+                                        <p>Atviru būdu gręžiami poliai – 15 – 25%</p>
+                                        <p>CFA grąžtui – 35 - 45%</p>
+                                    </div>
+                                </div>    
+                                <!--Setting up button to ADD new forms-->
+                                <hr>
+                                <button id="addMore" class="buttonADD">Pridėti papildoma figūra+</button>
+                            </article>
+                            <!--Setting up the text fot all forms results-->
+                            <footer>Rekomenduojamas užsakyti betono kiekis:
+                                <p class="skaiciuotiBendra" id="SkaicioutiBendra">0.00m<sup>3</sup></p>
+                            </footer>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+        <script src="main.js"></script> 
+    </body>
+</html>
